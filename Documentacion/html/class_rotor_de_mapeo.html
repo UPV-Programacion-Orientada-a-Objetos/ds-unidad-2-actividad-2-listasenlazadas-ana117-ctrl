@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Decodificador de Protocolo Industrial: Referencia de la clase RotorDeMapeo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Decodificador de Protocolo Industrial
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="class_rotor_de_mapeo-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase RotorDeMapeo</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementa el mecanismo de cifrado/descifrado mediante un rotor circular.  
+ <a href="#details">Más...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:aa4a3be7c3ce2021244e4977e4ad856c9" id="r_aa4a3be7c3ce2021244e4977e4ad856c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4a3be7c3ce2021244e4977e4ad856c9">RotorDeMapeo</a> ()</td></tr>
+<tr class="memdesc:aa4a3be7c3ce2021244e4977e4ad856c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Inicializa el rotor con el alfabeto ordenado (A-Z) en forma circular.  <br /></td></tr>
+<tr class="memitem:adc5f4bfe5b8d66ba7c9bac38f4be4c5c" id="r_adc5f4bfe5b8d66ba7c9bac38f4be4c5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc5f4bfe5b8d66ba7c9bac38f4be4c5c">~RotorDeMapeo</a> ()</td></tr>
+<tr class="memdesc:adc5f4bfe5b8d66ba7c9bac38f4be4c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Libera toda la memoria asignada a los nodos del rotor.  <br /></td></tr>
+<tr class="memitem:a3a619484f83124461714341ebb842678" id="r_a3a619484f83124461714341ebb842678"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a619484f83124461714341ebb842678">rotar</a> (int N)</td></tr>
+<tr class="memdesc:a3a619484f83124461714341ebb842678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rota el rotor N posiciones.  <br /></td></tr>
+<tr class="memitem:a70d4ad4bcef4bd5cec9c8d2602859f5c" id="r_a70d4ad4bcef4bd5cec9c8d2602859f5c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70d4ad4bcef4bd5cec9c8d2602859f5c">getMapeo</a> (char in)</td></tr>
+<tr class="memdesc:a70d4ad4bcef4bd5cec9c8d2602859f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el carÃ¡cter de mapeo (decodificado) para el carÃ¡cter de entrada.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Implementa el mecanismo de cifrado/descifrado mediante un rotor circular. </p>
+<p>Simula el rotor de una mÃ¡quina de cifrado. EstÃ¡ compuesto por una lista doblemente enlazada circular con los caracteres 'A' a 'Z'. La rotaciÃ³n cambia el punto de inicio del mapeo (la 'cabeza'). </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentación de constructores y destructores</h2>
+<a id="aa4a3be7c3ce2021244e4977e4ad856c9" name="aa4a3be7c3ce2021244e4977e4ad856c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a3be7c3ce2021244e4977e4ad856c9">&#9670;&#160;</a></span>RotorDeMapeo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RotorDeMapeo::RotorDeMapeo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. Inicializa el rotor con el alfabeto ordenado (A-Z) en forma circular. </p>
+
+</div>
+</div>
+<a id="adc5f4bfe5b8d66ba7c9bac38f4be4c5c" name="adc5f4bfe5b8d66ba7c9bac38f4be4c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc5f4bfe5b8d66ba7c9bac38f4be4c5c">&#9670;&#160;</a></span>~RotorDeMapeo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RotorDeMapeo::~RotorDeMapeo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. Libera toda la memoria asignada a los nodos del rotor. </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones miembro</h2>
+<a id="a70d4ad4bcef4bd5cec9c8d2602859f5c" name="a70d4ad4bcef4bd5cec9c8d2602859f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70d4ad4bcef4bd5cec9c8d2602859f5c">&#9670;&#160;</a></span>getMapeo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RotorDeMapeo::getMapeo </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el carÃ¡cter de mapeo (decodificado) para el carÃ¡cter de entrada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>El carÃ¡cter de entrada (cifrado). Se espera un carÃ¡cter en mayÃºscula A-Z. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>El carÃ¡cter decodificado. Devuelve el mismo carÃ¡cter si es un espacio o no es A-Z. </dd></dl>
+
+</div>
+</div>
+<a id="a3a619484f83124461714341ebb842678" name="a3a619484f83124461714341ebb842678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a619484f83124461714341ebb842678">&#9670;&#160;</a></span>rotar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RotorDeMapeo::rotar </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>N</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rota el rotor N posiciones. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>El nÃºmero de posiciones a rotar. Positivo para avanzar (siguiente), negativo para retroceder (previo). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>C:/Users/fifi0/ejercicios/listasEnlazadasDobles/<a class="el" href="main_8cpp.html">main.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

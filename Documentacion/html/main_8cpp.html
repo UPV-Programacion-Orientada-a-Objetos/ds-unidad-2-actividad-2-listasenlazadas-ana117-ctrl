@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Decodificador de Protocolo Industrial: Referencia del archivo C:/Users/fifi0/ejercicios/listasEnlazadasDobles/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Decodificador de Protocolo Industrial
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a href="dir_f472fbcd976cd56b2d9baa5b2f74b005.html">fifi0</a></li><li class="navelem"><a href="dir_123e2838efd4051a39efeeb16826b818.html">ejercicios</a></li><li class="navelem"><a href="dir_5a3e0857c4960fc914bb8e214cc5760f.html">listasEnlazadasDobles</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ImplementaciÃ³n del Decodificador PRT-7 para tramas de comunicaciÃ³n serial.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;termios.h&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:NodoRotor" id="r_NodoRotor"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodo_rotor.html">NodoRotor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodo para la lista doblemente enlazada circular que representa el rotor de mapeo.  <a href="struct_nodo_rotor.html#details">Más...</a><br /></td></tr>
+<tr class="memitem:NodoCarga" id="r_NodoCarga"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodo_carga.html">NodoCarga</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodo para la lista doblemente enlazada que almacena la carga/mensaje decodificado.  <a href="struct_nodo_carga.html#details">Más...</a><br /></td></tr>
+<tr class="memitem:RotorDeMapeo" id="r_RotorDeMapeo"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rotor_de_mapeo.html">RotorDeMapeo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementa el mecanismo de cifrado/descifrado mediante un rotor circular.  <a href="class_rotor_de_mapeo.html#details">Más...</a><br /></td></tr>
+<tr class="memitem:ListaDeCarga" id="r_ListaDeCarga"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lista_de_carga.html">ListaDeCarga</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista doblemente enlazada para almacenar el mensaje decodificado.  <a href="class_lista_de_carga.html#details">Más...</a><br /></td></tr>
+<tr class="memitem:TramaBase" id="r_TramaBase"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trama_base.html">TramaBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clase base abstracta para todos los tipos de tramas de comunicaciÃ³n.  <a href="class_trama_base.html#details">Más...</a><br /></td></tr>
+<tr class="memitem:TramaLoad" id="r_TramaLoad"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trama_load.html">TramaLoad</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa una trama de carga de carÃ¡cter ('L').  <a href="class_trama_load.html#details">Más...</a><br /></td></tr>
+<tr class="memitem:TramaMap" id="r_TramaMap"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trama_map.html">TramaMap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa una trama de mapeo/rotaciÃ³n ('M').  <a href="class_trama_map.html#details">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:aec1d1e0f26342831c2d78cb672b8c059" id="r_aec1d1e0f26342831c2d78cb672b8c059"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec1d1e0f26342831c2d78cb672b8c059">configurarSerial</a> (const char *puerto)</td></tr>
+<tr class="memdesc:aec1d1e0f26342831c2d78cb672b8c059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura y abre el puerto serial para la comunicaciÃ³n.  <br /></td></tr>
+<tr class="memitem:a72149f95e20002e1066d41501bf3bad0" id="r_a72149f95e20002e1066d41501bf3bad0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72149f95e20002e1066d41501bf3bad0">leerLineaSerial</a> (int fd, char *buffer, int maxLen)</td></tr>
+<tr class="memdesc:a72149f95e20002e1066d41501bf3bad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee una lÃ­nea de texto desde el puerto serial.  <br /></td></tr>
+<tr class="memitem:a36ab3052959e588c3a3bd6836db8b7b7" id="r_a36ab3052959e588c3a3bd6836db8b7b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_trama_base.html">TramaBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36ab3052959e588c3a3bd6836db8b7b7">parsearLinea</a> (char *linea)</td></tr>
+<tr class="memdesc:a36ab3052959e588c3a3bd6836db8b7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsea una lÃ­nea de texto (trama) y crea el objeto <a class="el" href="class_trama_base.html" title="Clase base abstracta para todos los tipos de tramas de comunicaciÃ³n.">TramaBase</a> correspondiente.  <br /></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Punto de entrada principal del programa.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>ImplementaciÃ³n del Decodificador PRT-7 para tramas de comunicaciÃ³n serial. </p>
+<p>Este programa simula el funcionamiento de un decodificador de mensajes basado en un rotor de cifrado tipo Enigma simple. Lee tramas desde un puerto serial, las parsea en operaciones de carga de caracteres ('L') o rotaciÃ³n del rotor ('M'), procesa cada trama y acumula el mensaje decodificado.</p>
+<dl class="section author"><dt>Autor</dt><dd>Gemini </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>06 de Noviembre de 2025 </dd></dl>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="aec1d1e0f26342831c2d78cb672b8c059" name="aec1d1e0f26342831c2d78cb672b8c059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec1d1e0f26342831c2d78cb672b8c059">&#9670;&#160;</a></span>configurarSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int configurarSerial </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>puerto</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configura y abre el puerto serial para la comunicaciÃ³n. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">puerto</td><td>El path del dispositivo serial (e.g., "/dev/ttyUSB0"). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>El descriptor de archivo del puerto abierto, o -1 en caso de error. </dd></dl>
+
+</div>
+</div>
+<a id="a72149f95e20002e1066d41501bf3bad0" name="a72149f95e20002e1066d41501bf3bad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72149f95e20002e1066d41501bf3bad0">&#9670;&#160;</a></span>leerLineaSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool leerLineaSerial </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>fd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxLen</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lee una lÃ­nea de texto desde el puerto serial. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>Descriptor de archivo del puerto serial. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Buffer donde se almacenarÃ¡ la lÃ­nea leÃ­da. </td></tr>
+    <tr><td class="paramname">maxLen</td><td>Longitud mÃ¡xima del buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si se leyÃ³ una lÃ­nea no vacÃ­a terminada por '<br  />
+' o '\r', false en caso contrario. </dd></dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Punto de entrada principal del programa. </p>
+<p>Inicializa las estructuras de datos, solicita el puerto serial al usuario, establece la conexiÃ³n y entra en un bucle para leer, parsear y procesar las tramas seriales hasta recibir la seÃ±al "FIN". </p><dl class="section return"><dt>Devuelve</dt><dd>0 si la ejecuciÃ³n finaliza con Ã©xito, 1 en caso de error de conexiÃ³n. </dd></dl>
+
+</div>
+</div>
+<a id="a36ab3052959e588c3a3bd6836db8b7b7" name="a36ab3052959e588c3a3bd6836db8b7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ab3052959e588c3a3bd6836db8b7b7">&#9670;&#160;</a></span>parsearLinea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_trama_base.html">TramaBase</a> * parsearLinea </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>linea</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parsea una lÃ­nea de texto (trama) y crea el objeto <a class="el" href="class_trama_base.html" title="Clase base abstracta para todos los tipos de tramas de comunicaciÃ³n.">TramaBase</a> correspondiente. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linea</td><td>La cadena de texto de la trama (e.g., "L,A" o "M,-5"). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Un puntero a un nuevo objeto <a class="el" href="class_trama_base.html" title="Clase base abstracta para todos los tipos de tramas de comunicaciÃ³n.">TramaBase</a> (<a class="el" href="class_trama_load.html" title="Representa una trama de carga de carÃ¡cter (&#39;L&#39;).">TramaLoad</a> o <a class="el" href="class_trama_map.html" title="Representa una trama de mapeo/rotaciÃ³n (&#39;M&#39;).">TramaMap</a>) o nullptr si la trama estÃ¡ mal formada. </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>El objeto retornado debe ser liberado con <span class="tt">delete</span>. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
